@@ -4,9 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaDatos
 {
@@ -92,7 +89,7 @@ namespace CapaDatos
                 {
                     c = new Categoria();
                     c.IdCategoria = (int)lector[0];
-                    c.Nombre = (string) lector[1];
+                    c.Nombre = (string)lector[1];
                     c.Descripcion = (string)lector[2];
                     lista.Add(c);
                 }

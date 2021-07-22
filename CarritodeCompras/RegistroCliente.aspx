@@ -3,91 +3,108 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
 
-	<title>Registrar</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="Imagenes/icons/registro.jpg"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
+
+	<html>
 	
+		<meta charset="utf-8">
+		<title>RegistrationForm_v10 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="fonts/linearicons/style.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+			<form runat="server">
+	<body>
 	
-	<div class="container-login100" style="background-image: url('Imagenes/css/fondo.jpg');">
-		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-				<center>
-					<img src="Imagenes/icons/registro.jpg"  class="login100-social-item img" alt="GOOGLE">
-					</center>
+		
+		<div class="wrapper">
+			<div class="inner">
+				<%--<img src="Imagenes/images/image-1.png" alt="" class="image-1">--%>
+				<form action="">
+					<h3>Nuevo Registro</h3>
+					<div>
+                            <asp:Label ID="lbl_cedula" runat="server" Text="Cedula"></asp:Label>
+						</div>
+					<div class="form-holder">
+						
+						<span class="lnr lnr-user"></span>
+                        <asp:TextBox ID="txt_cedula" runat="server"></asp:TextBox>
 
-				
-				<span class="login100-form-title p-b-37">
-					Registrar
-				</span>
-			    <form runat="server" > 
-				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
-					<input class="input100" type="text" name="username" placeholder="username or email">
-					<span class="focus-input100"></span>
-				</div>
+					</div>
+					<div>
+                            <asp:Label ID="lbl_nombres" runat="server" Text="Nombres"></asp:Label>
+						</div>
+					<div class="form-holder">
+						
+						<span class="lnr lnr-user"></span>
+                        <asp:TextBox ID="txt_nombre" runat="server"></asp:TextBox>
 
-				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-					<input class="input100" type="password" name="pass" placeholder="password">
-					<span class="focus-input100"></span>
-				</div>
+					</div>
+					<div>
+                            <asp:Label ID="lbl_apellidos" runat="server" Text="Apellidos"></asp:Label>
+						</div>
+					
+					<div class="form-holder">
+						
+						<span class="lnr lnr-user"></span>
+                        <asp:TextBox ID="txt_apellidos" runat="server"></asp:TextBox>
 
-				<div class="container-login100-form-btn">
-					<button class="login100-form-btn">
-						Sign In
+					</div>
+					<div>
+                            <asp:Label ID="lbl_direccion" runat="server" Text="Direccion"></asp:Label>
+						</div>
+					<div class="form-holder">
+						
+						<span class="lnr lnr-home"></span>
+                        <asp:TextBox ID="txt_direccion" runat="server"></asp:TextBox>
+
+					</div>
+					<div>
+                            <asp:Label ID="lbl_tlf" runat="server" Text="Telefono"></asp:Label>
+						</div>
+					<div class="form-holder">
+						<span class="lnr lnr-phone-handset"></span>
+						<asp:TextBox ID="txt_tlf" runat="server"></asp:TextBox>
+					</div>
+					<div>
+                            <asp:Label ID="lbl_correo" runat="server" Text="Correo"></asp:Label>
+						</div>
+					<div class="form-holder">
+						<span class="lnr lnr-envelope"></span>
+						<asp:TextBox ID="txt_correo" runat="server"></asp:TextBox>
+					</div>
+					<div>
+                            <asp:Label ID="lbl_usuario" runat="server" Text="Usuario"></asp:Label>
+						</div>
+					<div class="form-holder">
+						<span class="lnr lnr-user"></span>
+						<asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
+					</div>
+					<div>
+                            <asp:Label ID="lbl_clave" runat="server" Text="Contraseña"></asp:Label>
+						</div>
+					<div class="form-holder">
+						<span class="lnr lnr-lock"></span>
+						<asp:TextBox  typu="password" ID="txt_" runat="server"></asp:TextBox>
+					</div>
+					<button>
+                        <asp:Button ID="btn_registrar" runat="server" Text="Registrarse" />
+						
 					</button>
-				</div>
-			</form>
-
+				</form>
+				
+				<img src="Imagenes/images/image-2.png" alt="" class="image-2">
+			</div>
 			
 		</div>
-	</div>
-	
-	
-
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-</body>
-
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+				</form>
 </html>
-

@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
     <Content Include="css\util.css" />
     <Content Include="Imagenes\agua.jpg" />
     <Content Include="Imagenes\bananasplit.jpg" />
@@ -93,6 +94,9 @@
     <Content Include="Imagenes\icons\login.jpg" />
     <Content Include="Imagenes\icons\map-marker.png" />
     <Content Include="Imagenes\icons\registro.jpg" />
+    <Content Include="Imagenes\images\image-1.png" />
+    <Content Include="Imagenes\images\image-2.png" />
+    <Content Include="Imagenes\images\img1.jpg" />
     <Content Include="Imagenes\imgcono.jpg" />
     <Content Include="Imagenes\jugosnaturales.jpg" />
     <Content Include="Imagenes\limonada.png" />
@@ -104,6 +108,8 @@
     <Content Include="Imagenes\postres-recetas-chocolate-blanco.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="css\main.css" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\main.js" />
     <Content Include="RegistroCliente.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -125,6 +131,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css.map" />
+    <Content Include="css\style.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

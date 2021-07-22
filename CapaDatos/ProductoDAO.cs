@@ -4,9 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaDatos
 {
@@ -34,7 +31,7 @@ namespace CapaDatos
                 }
                 int registros;
                 registros = cmdProducto.ExecuteNonQuery();
-                if(registros == 1)
+                if (registros == 1)
                 {
                     rpta = "OK";
                 }
@@ -43,7 +40,7 @@ namespace CapaDatos
                     rpta = "Error al Insertar Producto";
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 System.Console.Write(ex.Message);
             }
@@ -192,6 +189,6 @@ namespace CapaDatos
             }
             return codigo;
         }
-    
+
     }
 }

@@ -1,10 +1,6 @@
-﻿using Entidades;
-using CapaDatos;
-using System;
+﻿using CapaDatos;
+using Entidades;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaNegocio
 {

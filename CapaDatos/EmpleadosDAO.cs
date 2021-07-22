@@ -4,9 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaDatos
 {
@@ -28,7 +25,7 @@ namespace CapaDatos
                     cmdEmpleados.Parameters.AddWithValue("@pNombres", E.Nombres);
                     cmdEmpleados.Parameters.AddWithValue("@pApellidos", E.Apellidos);
                     cmdEmpleados.Parameters.AddWithValue("@pCargo", E.Cargo);
-                    
+
                 }
                 int registros;
                 registros = cmdEmpleados.ExecuteNonQuery();

@@ -4,9 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaDatos
 {
@@ -146,7 +143,7 @@ namespace CapaDatos
                     c.Email = lector[6].ToString();
                     c.Usuario = lector[7].ToString();
                     c.Clave = lector[8].ToString();
-                    
+
                 }
             }
             catch (Exception ex)
@@ -215,7 +212,7 @@ namespace CapaDatos
             {
                 System.Console.Write(ex.Message);
             }
-            return rpta;   
+            return rpta;
         }
         public int CodCliente()
         {
@@ -232,6 +229,6 @@ namespace CapaDatos
             }
             return codigo;
         }
-    
+
     }
 }
