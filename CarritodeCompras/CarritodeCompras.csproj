@@ -68,9 +68,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\agua.jpg" />
+    <Content Include="Imagenes\bananasplit.jpg" />
+    <Content Include="Imagenes\cake.jpg" />
+    <Content Include="Imagenes\cheesecake.jpg" />
+    <Content Include="Imagenes\chocolate.jpg" />
+    <Content Include="Imagenes\cono.jpg" />
+    <Content Include="Imagenes\coopcake.jpg" />
+    <Content Include="Imagenes\copa.jpg" />
+    <Content Include="Imagenes\copaqueso.jpg" />
+    <Content Include="Imagenes\de hielo.jpg" />
+    <Content Include="Imagenes\frutas.jpg" />
+    <Content Include="Imagenes\galletap.jpg" />
+    <Content Include="Imagenes\gaseosas.jpg" />
+    <Content Include="Imagenes\gelatinap.jpg" />
+    <Content Include="Imagenes\helado-de-caramelo-salado-y-blondie-5.jpg" />
+    <Content Include="Imagenes\helado1.jpg" />
+    <Content Include="Imagenes\hyoguort.jpg" />
+    <Content Include="Imagenes\imgcono.jpg" />
+    <Content Include="Imagenes\jugosnaturales.jpg" />
+    <Content Include="Imagenes\limonada.png" />
+    <Content Include="Imagenes\logo.png" />
+    <Content Include="Imagenes\mause.jpg" />
+    <Content Include="Imagenes\mause1.jpg" />
+    <Content Include="Imagenes\napolitanoqqueso.jpg" />
+    <Content Include="Imagenes\oreop.jpg" />
+    <Content Include="Imagenes\postres-recetas-chocolate-blanco.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="css\mainl.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,10 +135,7 @@
       <Name>Util</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="css\" />
-    <Folder Include="Imagenes\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
