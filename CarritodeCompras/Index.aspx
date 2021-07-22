@@ -2,47 +2,92 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+<head>
+	<title>Login V9</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="Imagenes/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-<html>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<body>
+	
+	
+	<div class="container-login100" style="background-image: url('Imagenes/icons/fondo.jpg');">
+		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+			<form class="login100-form validate-form">
+				<center>
+					<img src="Imagenes/icons/login.jpg"  class="login100-social-item img" alt="GOOGLE">
+					</center>
+				<span class="login100-form-title p-b-37">
+					Login
+				</span>
+				<form runat= "server">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+					<ContentTemplate>
+						<asp:Label ID="Label1" runat="server" Text="Usuario" class="wrap-input100 validate-input m-b-20"></asp:Label>
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Ingrese su cédula">
+                   <asp:TextBox ID="txt_Cedula" class="input100"  placeholder="Ingrese su cédula" runat="server"></asp:TextBox>
+					<span class="focus-input100"></span>
+				</div>
+             	<asp:Label ID="Label3" runat="server" Text="Contraseña" class="wrap-input100 validate-input m-b-20"></asp:Label>
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					<asp:TextBox ID="txt_pass" runat="server" class="input100" placeholder="Ingrese su password" TextMode="Password"></asp:TextBox>
+					<span class="focus-input100"></span>
+				</div>
+					
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-<div class="container">
-    <div class="card card-login mx-auto text-center bg-dark">
-        <div class="card-header mx-auto bg-dark">
-            <span> <img src="/../Imagenes/logo.png" class="w-75" alt="Logo"> </span><br />
-            
-        </div>
-        <div class="card-body">
-            <form action="" method="post">
-                <div class="input-group form-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-user"></i></span>
-                    </div>
-                    <input type="text" name="email" class="form-control" placeholder="Usuario">
-                </div>
+				<div class="container-login100-form-btn">
+                    <asp:Button ID="btn_ingresar" runat="server" class="login100-form-btn" Text="Ingresar" />
+					 <asp:Button ID="btn_olvido" Visible="false" runat="server" class="login100-form-btn" Text="Recuperar Clave" />		
+			    </div>
+						<%--<div>
+				     <asp:LinkButton ID="lnk_olvido"  class="txt2 hov1" runat="server" OnClick="lnk_olvido_Click">Olvido su contraseña</asp:LinkButton>
+					<br />    
+					<asp:LinkButton ID="lnk_regresar"  Visible="false" class="txt2 hov1" runat="server" OnClick="lnk_regresar_Click" PostBackUrl="~/Login.aspx">Regresar</asp:LinkButton>
+					<br />
+                    <asp:LinkButton ID="lnkregistrar" class="txt2 hov1" OnClick="lnkregistrar_Click" runat="server" EnableTheming="True" PostBackUrl="~/Registro.aspx">Crear una Cuenta!</asp:LinkButton>
+				</div>--%>					
+						</ContentTemplate>
+						</asp:UpdatePanel>
+						</form>
+				<div>
+                    <asp:Label ID="lbl_intento" Visible="false" runat="server" Text="Intentos"></asp:Label>
+					<br />
+                    <asp:Label ID="lbl_mensaje"  ForeColor="Red" runat="server" Text=""></asp:Label>
+				</div>
+			</form>
+				
 
-                <div class="input-group form-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-key"></i></span>
-                    </div>
-                    <input type="password" name="password" class="form-control" placeholder="Contraseña">
-                </div>
+			
+		</div>
+	</div>
+	
+	
 
-                <div class="form-group">
-                    <input type="submit" name="btn" value="Ingresar" class="btn btn-outline-danger float-right login_btn">
-                </div>
 
-            </form>
-        </div>
-    </div>
-</div>
+
+</body>
+
 
 </html>

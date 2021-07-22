@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\util.css" />
     <Content Include="Imagenes\agua.jpg" />
     <Content Include="Imagenes\bananasplit.jpg" />
     <Content Include="Imagenes\cake.jpg" />
@@ -85,6 +86,13 @@
     <Content Include="Imagenes\helado-de-caramelo-salado-y-blondie-5.jpg" />
     <Content Include="Imagenes\helado1.jpg" />
     <Content Include="Imagenes\hyoguort.jpg" />
+    <Content Include="Imagenes\icons\bg-01.jpg" />
+    <Content Include="Imagenes\icons\favicon.ico" />
+    <Content Include="Imagenes\icons\fondo.jpg" />
+    <Content Include="Imagenes\icons\icon-google.png" />
+    <Content Include="Imagenes\icons\login.jpg" />
+    <Content Include="Imagenes\icons\map-marker.png" />
+    <Content Include="Imagenes\icons\registro.jpg" />
     <Content Include="Imagenes\imgcono.jpg" />
     <Content Include="Imagenes\jugosnaturales.jpg" />
     <Content Include="Imagenes\limonada.png" />
@@ -95,7 +103,7 @@
     <Content Include="Imagenes\oreop.jpg" />
     <Content Include="Imagenes\postres-recetas-chocolate-blanco.jpg" />
     <Content Include="Index.aspx" />
-    <Content Include="css\mainl.css" />
+    <Content Include="css\main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
