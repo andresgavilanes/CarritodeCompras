@@ -68,7 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\main.css" />
+    <Content Include="css\main1.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\util.css" />
     <Content Include="Imagenes\agua.jpg" />
     <Content Include="Imagenes\bananasplit.jpg" />
     <Content Include="Imagenes\cake.jpg" />
@@ -314,6 +317,7 @@
     <Content Include="Mantenimiento\lib\xchart\xcharts.css" />
     <Content Include="Mantenimiento\lib\xchart\xcharts.min.js" />
     <Content Include="Mantenimiento\lib\zabuto_calendar.js" />
+    <Content Include="Productos.aspx" />
     <Content Include="Registro Empleados.aspx" />
     <Content Include="RegistroCliente.aspx" />
     <Content Include="Web.config" />
@@ -332,6 +336,13 @@
     </Compile>
     <Compile Include="Mantenimiento\Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro Empleados.aspx.cs">
