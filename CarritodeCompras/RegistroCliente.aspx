@@ -93,7 +93,7 @@
 						<asp:TextBox  typu="password" ID="txt_" runat="server"></asp:TextBox>
 					</div>
 					<button>
-                        <asp:Button ID="btn_registrar" runat="server" Text="Registrarse" />
+                        <asp:Button ID="btn_registrar" runat="server" Text="Registrarse" OnClick="btn_registrar_Click" />
 						
 					</button>
 				</form>
