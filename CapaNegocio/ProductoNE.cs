@@ -32,6 +32,12 @@ namespace CapaNegocio
         {
             return pdao.ListaCatalogoProductos();
         }
+
+        public List<Producto> ListarProducto()
+        {
+            throw new NotImplementedException();
+        }
+
         public int CodProducto()
         {
             return pdao.CodProducto();
